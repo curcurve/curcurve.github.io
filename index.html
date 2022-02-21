@@ -581,8 +581,14 @@
 
 
 <script>
+var curWwwPath = window.document.location.href;
+//获取主机地址之后的目录，如： /ems/Pages/Basic/Person.jsp
+var pathName = window.document.location.pathname;
+var pos = curWwwPath.indexOf(pathName);
+var localhostPath = curWwwPath.substring(0, pos);
+var ppath = localhostPath + "/js/Valine.min.js"
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('/js/Valine.min.js', () => {
+  NexT.utils.getScript(ppath, () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {

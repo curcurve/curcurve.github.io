@@ -19,6 +19,7 @@
   background: var(--btn-default-hover-bg);
   border-color: var(--btn-default-hover-border-color);
   color: var(--btn-default-hover-color);
+  cursor: pointer;
 }
 
 .hbe,

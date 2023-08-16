@@ -18,6 +18,7 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
+  --highlight-background: $highlight-background;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -408,7 +409,7 @@ td {
 }
 .highlight,
 pre {
-  background: #f7f7f7;
+  background: var(--highlight-background);
   color: #4d4d4c;
   line-height: 1.6;
   margin: 0 auto 20px;
@@ -471,7 +472,7 @@ code {
   text-align: right;
 }
 .highlight .code pre {
-  background: #f7f7f7;
+  background: var(--highlight-background);
   padding-left: 10px;
   width: 100%;
 }
@@ -1224,7 +1225,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fff908;
+  background: #ff5513;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

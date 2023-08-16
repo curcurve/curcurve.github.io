@@ -443,7 +443,7 @@ code {
   padding: 0;
 }
 .highlight figcaption {
-  background: #eff2f3;
+  background: var(--highlight-gutter-background, #eff2f3);
   color: var(--highlight-foreground, #4d4d4c);
   display: flex;
   font-size: 0.875em;
@@ -464,7 +464,7 @@ code {
   user-select: none;
 }
 .highlight .gutter pre {
-  background: #eff2f3;
+  background: var(--highlight-gutter-background, #eff2f3);
   color: var(--highlight-gutter-foreground, #869194);
   padding-left: 10px;
   padding-right: 10px;
@@ -1224,7 +1224,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff5425;
+  background: #79659d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

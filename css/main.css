@@ -18,7 +18,6 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: $highlight-background;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -409,8 +408,8 @@ td {
 }
 .highlight,
 pre {
-  background: var(--highlight-background);
-  color: #4d4d4c;
+  background: var(--highlight-background, #f7f7f7);
+  color: var(--highlight-foreground, #4d4d4c);
   line-height: 1.6;
   margin: 0 auto 20px;
 }
@@ -445,7 +444,7 @@ code {
 }
 .highlight figcaption {
   background: #eff2f3;
-  color: #4d4d4c;
+  color: var(--highlight-foreground, #4d4d4c);
   display: flex;
   font-size: 0.875em;
   justify-content: space-between;
@@ -453,10 +452,10 @@ code {
   padding: 0.5em;
 }
 .highlight figcaption a {
-  color: #4d4d4c;
+  color: var(--highlight-foreground, #4d4d4c);
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: var(--highlight-foreground, #4d4d4c);
 }
 .highlight .gutter {
   -moz-user-select: none;
@@ -466,13 +465,13 @@ code {
 }
 .highlight .gutter pre {
   background: #eff2f3;
-  color: #869194;
+  color: var(--highlight-gutter-foreground, #869194);
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
 }
 .highlight .code pre {
-  background: var(--highlight-background);
+  background: var(--highlight-background, #f7f7f7);
   padding-left: 10px;
   width: 100%;
 }
@@ -488,7 +487,7 @@ pre {
 }
 pre code {
   background: none;
-  color: #4d4d4c;
+  color: var(--highlight-foreground, #4d4d4c);
   font-size: 0.875em;
   padding: 0;
   text-shadow: none;
@@ -1225,7 +1224,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #58de8a;
+  background: #ff5425;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

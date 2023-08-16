@@ -1187,8 +1187,8 @@ pre .javascript .function {
 .site-author-image {
   border: 1px solid #eee;
   display: block;
-  margin: 0 auto;
-  max-width: 120px;
+  margin: 20px auto;
+  max-width: 100px;
   padding: 2px;
   border-radius: 50%;
 }
@@ -1224,7 +1224,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #93ff83;
+  background: #99b4ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/purple/pace-theme-flash.css">
   <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script id="hexo-configurations">
@@ -77,7 +77,7 @@
   </style>
 </noscript>
 
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999;width:2rem!important;height:2rem!important}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999;width:2rem!important;height:2rem!important}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}.switch-style{width:32px;height:32px;border-radius:100%;background:var(--body-bg-color);box-shadow:0 4px 15px 0 rgb(55 99 170 / 15%),-1px -1px 9px 0 rgb(0 0 0 / 1%);transition:box-shadow .3s cubic-bezier(.4, 0, 1, 1) .3s;position:fixed;left:32px;bottom:32px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}.switch-style i{display:flex;flex-shrink:0;transition:.3s ease-in-out}.icon-light{transform:translateY(-50%) scale(1);opacity:1}.icon-dark{transform:translateY(-100%) scale(0);opacity:0}.isdark{box-shadow:0 4px 20px 0 rgb(55 99 170 / 15%),-1px -1px 20px 0 #fff}.isdark .icon-light{opacity:0;transform:translateY(100%) scale(0)}.isdark .icon-dark{transform:translateY(50%) scale(1);opacity:1}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -482,6 +482,12 @@
   
 <script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
+<!--custom button-->
+<div class="switch-style">
+    <i class="icon icon-dark"><svg width="18" height="18" viewBox="0 0 18 18"> <path d="M7.139 1.484a.8.8 0 0 1 .176.865 6.407 6.407 0 0 0 8.336 8.336.8.8 0 0 1 1.041 1.041A8.01 8.01 0 0 1 1.25 8.741c0-3.37 2.08-6.25 5.024-7.434a.8.8 0 0 1 .865.177z" fill="#CCC"></path> </svg></i>
+    <i class="icon icon-light"><svg width="18" height="18" viewBox="0 0 18 18"> <g clip-path="url(#clip0_499_684)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0a.9.9 0 0 1 .9.9v.9a.9.9 0 0 1-1.8 0V.9A.9.9 0 0 1 9 0zM2.636 2.636a.9.9 0 0 1 1.273 0l.636.636a.9.9 0 0 1-1.273 1.273l-.636-.636a.9.9 0 0 1 0-1.273zm12.728 0a.9.9 0 0 1 0 1.273l-.636.636a.9.9 0 0 1-1.273-1.273l.636-.636a.9.9 0 0 1 1.273 0zM4.5 9a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zM0 9a.9.9 0 0 1 .9-.9h.9a.9.9 0 0 1 0 1.8H.9A.9.9 0 0 1 0 9zm15.3 0a.9.9 0 0 1 .9-.9h.9a.9.9 0 1 1 0 1.8h-.9a.9.9 0 0 1-.9-.9zm-1.845 4.455a.9.9 0 0 1 1.273 0l.636.636a.9.9 0 1 1-1.273 1.273l-.636-.636a.9.9 0 0 1 0-1.273zm-10.183 0a.9.9 0 1 1 1.273 1.273l-.636.636a.9.9 0 1 1-1.273-1.273l.636-.636zM9 15.3a.9.9 0 0 1 .9.9v.9a.9.9 0 0 1-1.8 0v-.9a.9.9 0 0 1 .9-.9z" fill="url(#paint0_linear_499_684)"></path> </g> <defs> <linearGradient id="paint0_linear_499_684" x2="18" y2="18" gradientUnits="userSpaceOnUse"> <stop stop-color="#FACC15"></stop> <stop offset="1" stop-color="#FA9D16"></stop> </linearGradient> <clipPath id="clip0_499_684"> <path fill="#fff" d="M0 0h18v18H0z"></path> </clipPath> </defs> </svg></i>
+</div>
+
 <script>
 var options = {
   bottom: '32px',
@@ -498,8 +504,36 @@ var options = {
 }
 const darkmode = new Darkmode(options);
 window.darkmode = darkmode;
-darkmode.showWidget();
+//darkmode.toggle();
+initThemeStyle();
+//darkmode.showWidget();
+//setThemeStyle() {
+ //   let btn = document.querySelector('.switch-style');
+ //   btn.addEventListener('click', ()=> btn.classList.contains('isdark') ? btn.classList.remove('isdark') :      //btn.classList.add('isdark'));
+//}
+
+function initThemeStyle() {
+        let themeStyle = document.querySelector('.switch-style');
+        if (darkmode.isActivated()) {
+                    themeStyle.classList.add('isdark');
+                } else {
+                    themeStyle.classList.remove('isdark');
+         }
+}
+let btn = document.querySelector('.switch-style');
+btn.onclick = function setThemeStyle() {
+                    let themeStyle = document.querySelector('.switch-style');
+	    console.log("success");
+                    darkmode.toggle();
+                    if (themeStyle.classList.contains('isdark')) {
+                        themeStyle.classList.remove('isdark');
+                    } else {
+                        themeStyle.classList.add('isdark');
+                    }
+}
+
 </script>
+
 
 
 <script>

@@ -1226,7 +1226,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #74fa7c;
+  background: #fa5e1d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2637,28 +2637,13 @@ ul.breadcrumb li + li:last-child {
 }
 /**/
 #bber .timeline ul li.item:hover {
-  border: var(--body-bg-color);
+  background-color: var(--body-bg-color);
 }
 #bber ul.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-/**/
-@media screen and (max-width: 1300px) {
-  div#bber li.item {
-    width: 28%;
-    margin: 0 1.1% 10px 0;
-  }
-}
-/**/
-@media screen and (max-width: 768px) {
-  #bber .timeline ul li.item {
-    width: 88%;
-    margin-right: 0;
-    padding: 16px 20px;
-  }
 }
 .timeline ul .list {
   display: flex;
@@ -2682,4 +2667,25 @@ ul.breadcrumb li + li:last-child {
 #bber {
   margin-top: 1rem;
   width: 100%;
+}
+/*响应式*/
+@media screen and (max-width: 1300px) {
+  div#bber li.item {
+    width: 28%;
+    margin: 0 1.1% 10px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #bber .timeline ul li.item {
+    width: 43%;
+    margin-right: 0;
+    padding: 16px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #bber .timeline ul li.item {
+    width: 88%;
+    margin-right: 0;
+    padding: 16px 20px;
+  }
 }

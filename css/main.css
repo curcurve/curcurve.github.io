@@ -1226,7 +1226,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #1c95ff;
+  background: #597893;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2824,14 +2824,12 @@ a.bber-content-link:hover {
     margin: 0 1.1% 10px 0;
   }
 }
-
-@media screen and (max-width: 992px){
-  #bber .timeline ul li.item {
-    width: 43%;
-    margin-right: 2%;
+*/
+@media screen and (max-width: 991px) {
+  #bbTimeList {
+    margin-top: 10px;
   }
 }
-*/
 @media screen and (max-width: 768px) {
   #bber .timeline ul li.item {
     padding: 16px 20px;
@@ -2845,9 +2843,6 @@ a.bber-content-link:hover {
   #bber-talk {
     height: 26px !important;
     font-size: 13px;
-  }
-  #bbTimeList {
-    margin-top: 10px;
   }
 }
 /* bber-首页 */
@@ -2907,6 +2902,90 @@ i.bber-gotobb {
 .highlight *::selection {
   background: #d6d6d6;
   color: #262a30;
+}
+/*固定播放器样式*/
+.aplayer-customFixed .aplayer-body {
+  max-width: 300px !important;
+  height: 40px !important;
+}
+.aplayer-customFixed .aplayer-pic {
+  height: 40px !important;
+  width: 40px !important;
+}
+.aplayer-customFixed .aplayer-time-inner {
+  display: none;
+}
+.aplayer-customFixed .aplayer-info {
+  padding: 2px 4px !important;
+  margin-left: 40px !important;
+  height: 40px !important;
+  border-right: 1px solid #e9e9e9;
+}
+.aplayer-customFixed .aplayer-music {
+  margin-bottom: 0 !important;
+  margin-top: 1px !important;
+  width: calc(100% - 84px) !important;
+}
+.aplayer-customFixed .aplayer-icon {
+  width: 14px !important;
+  height: 14px !important;
+  bottom: 18px !important;
+}
+.aplayer-customFixed .aplayer-icon.aplayer-icon-play {
+  right: 32px !important;
+  margin-right: 5px;
+}
+.aplayer-customFixed .aplayer-icon.aplayer-icon-forward {
+  right: 14px !important;
+  margin-right: 5px !important;
+}
+.aplayer-customFixed .aplayer-list {
+  margin-bottom: 40px !important;
+}
+.aplayer-customFixed .aplayer.aplayer-withlist.aplayer-fixed {
+  max-width: 300px !important;
+}
+.aplayer-customFixed .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  width: 40px !important;
+}
+.aplayer-customFixed .aplayer-time.aplayer-time-narrow {
+  position: relative;
+}
+.aplayer-customFixed .aplayer-icon.aplayer-icon-back {
+  right: 48px !important;
+  margin-right: 8px !important;
+}
+.aplayer-customFixed .aplayer-miniswitcher .aplayer-icon {
+  width: 100% !important;
+  height: 100% !important;
+}
+.aplayer-customFixed:hover .aplayer-miniswitcher {
+  display: block !important;
+}
+.aplayer-customFixed .aplayer-miniswitcher {
+  display: none !important;
+  transition: unset !important;
+}
+.aplayer-customFixed:hover .aplayer.aplayer-withlist.aplayer-fixed.aplayer-narrow .aplayer-body {
+  padding-right: 18px !important;
+}
+.aplayer-customFixed .aplayer.aplayer-withlist.aplayer-fixed.aplayer-narrow .aplayer-body {
+  padding-right: 0 !important;
+}
+.aplayer-customFixed:hover .aplayer.aplayer-withlist.aplayer-fixed .aplayer-body {
+  background-color: #fff !important;
+}
+.aplayer-customFixed .aplayer.aplayer-withlist.aplayer-fixed .aplayer-body {
+  background-color: transparent !important;
+}
+.aplayer-customFixed .aplayer-thumb {
+  display: none !important;
+}
+.aplayer-customFixed .aplayer-title {
+  color: #555 !important;
+}
+.aplayer-customFixed .aplayer-list-title {
+  color: #555 !important;
 }
 @font-face {
   font-family: swiper-icons;
